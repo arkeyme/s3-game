@@ -1,0 +1,2 @@
+    aws s3api list-objects --bucket s3game-galaxy-level3-cpc848he7scn --profile s3-game
+    aws s3api get-object --bucket s3game-galaxy-level3-cpc848he7scn --profile s3-game --key secret3_needs_credentials secret3_needs_credentials

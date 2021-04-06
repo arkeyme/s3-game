@@ -1,0 +1,53 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>S3 Game - Galaxy</title>
+        <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+        <style>
+            body { font-family: Andale Mono, monospace; }
+            :not(center) > pre { background-color: #202020; padding: 4px; border-radius: 5px; border-color:#00d000; 
+            border-width: 1px; border-style: solid; white-space: pre-wrap; font-size:120%; font: Inconsolata, monospace;  background-color: black; background-image: radial-gradient( rgba(0, 100, 0, 0.75), black 120% );} 
+            ::selection { background: #00d000; color: black; text-shadow: none; }
+        </style>
+    </head>
+<body text="#00d000" bgcolor="#000000" style="max-width:800px; margin-left:auto ;margin-right:auto" vlink="#00ff00" link="#00ff00">
+<center>
+<pre>
+ _______             _        _______           _______  _          __   
+(  ____ \           ( \      (  ____ \|\     /|(  ____ \( \        /  \  
+| (    \/           | (      | (    \/| )   ( || (    \/| (        \/) ) 
+| |         _____   | |      | (__    | |   | || (__    | |          | | 
+| | ____   (_____)  | |      |  __)   ( (   ) )|  __)   | |          | | 
+| | \_  )           | |      | (       \ \_/ / | (      | |          | | 
+| (___) |           | (____/\| (____/\  \   /  | (____/\| (____/\  __) (_
+(_______)           (_______/(_______/   \_/   (_______/(_______/  \____/
+
+</pre>
+</center>
+
+<hr size="2" color="#00d000">
+A policy defines who (Principal) can access a bucket and objects (Resources) and what (Actions) can be done.<br><br>
+
+<pre><i><u>Hint 2</u>
+
+Bucket policy is:</i>
+{
+    "Effect": "Allow",
+    "Principal": "*",
+    "Action": "s3:ListBucket",
+    "Resource": "arn:aws:s3:::s3game-galaxy-level1"
+},
+{
+    "Effect": "Allow",
+    "Principal": "*",
+    "Action": "s3:GetObject",
+    "Resource": "arn:aws:s3:::s3game-galaxy-level1/*"
+}
+
+The Principal is "*". So no AWS credentials needed to list and get objects.
+
+</pre>
+Just use your browser to list all available objects :) <br><br>
+<i><u>Note</u>: S3 bucket returns a list of objects in XML format.</i><br><br>
+
+<hr size="2" color="#00d000"><br>
+<i>Need another <a href=https://s3game-galaxy-level1.s3.us-east-2.amazonaws.com/g-level1-hint3.html>hint</a>?</i><br>
+</body></html>
