@@ -7,4 +7,5 @@
     Default region name [None]: us-east-2
     Default output format [None]:
 
-    aws s3api head-object --bucket s3game-level3 --key treasure3_has_no_secret_code --profile s3-game
+    aws s3api get-object --bucket s3game-level2 --key treasure2 --profile s3-game treasure2
+    cat treasure2
