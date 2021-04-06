@@ -1,0 +1,2 @@
+    aws s3api list-object-versions --bucket s3game-level5-8v95e5rv7z4i --profile tmp > obj_versions
+    aws s3api get-object --bucket 's3game-level5-8v95e5rv7z4i' --key treasure5_is_deleted --version-id '344PQOyFqocF0TI66MbLynNNdQqHfBz3' --profile tmp treasure5_is_deleted

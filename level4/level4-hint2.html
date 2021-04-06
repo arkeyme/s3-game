@@ -1,0 +1,53 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>S3 Game</title>
+        <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+        <style>
+            body { font-family: Andale Mono, monospace; }
+            :not(center) > pre { background-color: #202020; padding: 4px; border-radius: 5px; border-color:#00d000; 
+            border-width: 1px; border-style: solid;} 
+        </style>
+    </head>
+<body text="#00d000" bgcolor="#000000" style="max-width:800px; margin-left:auto ;margin-right:auto" vlink="#00ff00" link="#00ff00">
+
+
+<center>
+<pre>
+ _        _______           _______  _             ___   
+( \      (  ____ \|\     /|(  ____ \( \           /   )  
+| (      | (    \/| )   ( || (    \/| (          / /) |  
+| |      | (__    | |   | || (__    | |         / (_) (_ 
+| |      |  __)   ( (   ) )|  __)   | |        (____   _)
+| |      | (       \ \_/ / | (      | |             ) (  
+| (____/\| (____/\  \   /  | (____/\| (____/\       | |  
+(_______/(_______/   \_/   (_______/(_______/       (_)  
+
+</pre>
+</center>
+
+<hr size="2" color="#00d000">
+<p>
+Object in S3, including its metadata, is immutable. When you edit object's metadata, you are actually overwriting the object with a copy of itself, with its metadata modified. In contrast, tags are subresources. They are managed separately and can be modified without modifying the object itself.<br><br>
+
+Each tag is a key-value pair. You can associate up to 10 case-sensitive tags with an object.</p>
+
+<pre><i><u>Hint 2</u>
+<i>To get objets'tags use <a href="https://docs.aws.amazon.com/cli/latest/reference/s3api/get-object-tagging.html">get-object-tagging</a> command.</i>
+
+{
+    "TagSet": [
+        {
+            "Key": "secret_code",
+            "Value": "xxx"
+        }
+    ]
+}
+</pre>
+</p>
+
+<hr size="2" color="#00d000">
+<br>
+<i>You are able to do the rest by yourself without hints. <br>
+Get the secret code, and use <br>
+https://s3game-level5-&ltTHE CODE&gt.s3.us-east-2.amazonaws.com/level5.html</i>
+
+</body></html>

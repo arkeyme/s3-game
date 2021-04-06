@@ -1,0 +1,47 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>S3 Game</title>
+        <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+        <style>
+            body { font-family: Andale Mono, monospace; }
+            :not(center) > pre { background-color: #202020; padding: 4px; border-radius: 5px; border-color:#00d000; 
+            border-width: 1px; border-style: solid; white-space: pre-wrap;} 
+        </style>
+    </head>
+<body text="#00d000" bgcolor="#000000" style="max-width:800px; margin-left:auto ;margin-right:auto" vlink="#00ff00" link="#00ff00">
+
+<center>
+<pre>
+ _        _______           _______  _           ______ 
+( \      (  ____ \|\     /|(  ____ \( \         / ____ \
+| (      | (    \/| )   ( || (    \/| (        ( (    \/
+| |      | (__    | |   | || (__    | |        | (____  
+| |      |  __)   ( (   ) )|  __)   | |        |  ___ \ 
+| |      | (       \ \_/ / | (      | |        | (   ) )
+| (____/\| (____/\  \   /  | (____/\| (____/\  ( (___) )
+(_______/(_______/   \_/   (_______/(_______/   \_____/ 
+
+</pre>
+<p style="font-size:20px"> Progress: |======.....| 6/11 </p>
+</center>
+
+<hr size="2" color="#00d000">
+<p>SELECT the right way to solve it :) <br><br>
+
+S3 Select is designed to pull out only the data you need from an object, which can improve the performance and reduce the cost. <br><br>
+
+S3 Select filters the content of an Amazon S3 object based on SQL statement. In the request, you must specify a data format (JSON, CSV, or Apache Parquet). Amazon S3 uses this format to parse object data into records and returns only records that match the specified SQL expression. You must also specify the data serialization format for the response.
+</p>
+
+<pre><i><u>Hint 1</u>
+<i>Find the gzipped CSV (semicolon delimiter) treasure file. Try requesting it with following SQL query:</i>
+
+SELECT Answer FROM &ltTHE FILE&gt WHERE Category = 'TREASURE' 
+
+Here are the parameters for <a href="https://docs.aws.amazon.com/cli/latest/reference/s3api/select-object-content.html">select-object-content</a> command.
+
+</pre>
+<i><u>Note</u>: Definitely, there are other ways to find a secret code in the file. :) But try using S3 Select instead. It worth studying... </i>
+<hr size="2" color="#00d000">
+<br>
+<i>Need another <a href=https://s3game-level6-vjv45x1gux81.s3.us-east-2.amazonaws.com/level6-hint2.html>hint</a>?
+</p></body></html>

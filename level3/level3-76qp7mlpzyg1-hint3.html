@@ -1,0 +1,46 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>S3 Game</title>
+        <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+        <style>
+            body { font-family: Andale Mono, monospace; }
+            :not(center) > pre { background-color: #202020; padding: 4px; border-radius: 5px; border-color:#00d000; 
+            border-width: 1px; border-style: solid; white-space: pre-wrap;} 
+        </style>
+    </head>
+<body text="#00d000" bgcolor="#000000" style="max-width:800px; margin-left:auto ;margin-right:auto" vlink="#00ff00" link="#00ff00">
+
+
+<center>
+<pre>
+ _        _______           _______  _          ______  
+( \      (  ____ \|\     /|(  ____ \( \        / ___  \ 
+| (      | (    \/| )   ( || (    \/| (        \/   \  \
+| |      | (__    | |   | || (__    | |           ___) /
+| |      |  __)   ( (   ) )|  __)   | |          (___ ( 
+| |      | (       \ \_/ / | (      | |              ) \
+| (____/\| (____/\  \   /  | (____/\| (____/\  /\___/  /
+(_______/(_______/   \_/   (_______/(_______/  \______/ 
+
+</pre>
+</center>
+
+<hr size="2" color="#00d000">
+<p>I hope you found the treasure file. What did you find inside the file?<br><br>
+Where can the secret be hidden?</p>
+
+<pre><i><u>Hint 3</u>
+<i>Uploading a new object, you can specify user-defined metadata. This optional information is a key-value pair. 
+
+To distinguish metadata from other HTTP headers, it must begin with "x-amz-meta-".</i>
+
+# aws s3 cp treasure_file s3://bucket/treasure_file --metadata '{"x-amz-meta-secret-code":"xxx"}'
+</pre>
+
+<p>How to get objects' metadata?</p>
+
+<hr size="2" color="#00d000">
+<br>
+<i>Need another <a href=https://s3game-level3.s3.us-east-2.amazonaws.com/level3-76qp7mlpzyg1-hint4.html>hint</a>?<br>
+</p>
+
+</body></html>
